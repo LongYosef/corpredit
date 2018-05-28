@@ -172,7 +172,7 @@ class CorpSearch(object):
         self.max_entertimes=max_click
         self.click_valitimes=0
         self.action=ActionChains(self.driver)
-        self.gt_shot=GtClickShot("Shotcpt","Shotcpt1989")
+        self.gt_shot=GtClickShot("xxx","xxxxxx")
         self.options=webdriver.ChromeOptions()
         self.headers=headers
         for option in self.headers:
@@ -673,13 +673,6 @@ if __name__=='__main__':
         detail=pg_detail.search_result_parse()
         print(detail)
     time.sleep(5)
-    '''
-    for keyword in search_list[1:-1]:
-        test1.main(keyword,start_pg="homepage")    
-        cookie_name=md5(search_list[0].encode("utf-8")).hexdigest()+".json"
-        test1.save_cookie_and_html(cookie_name)
-        time.sleep(6)
-    '''
     test1.driver.quit()
     
     

@@ -1,9 +1,12 @@
 # corpredit
 crawler of the campany redit infomation
+
 预计目标：爬取信用信息公示系统中指定企业的信用相关信息
+
 实际目标：绕过反扒，同时结合requests包和cookie信息进一步进行请求，从而获得相关信息。
 
 反爬系统：加速乐+极验验证码（滑动或文字点击）
+
 主要使用包：selenium,chromdriver,requests,cv2,numpy,PIL,lxml
 
 思路：
